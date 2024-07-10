@@ -4,28 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lingua</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        body {
+        .body-container {
             font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-            margin-top: 50px;
-        }
-        h1 {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f9;
             color: #333;
         }
-        a {
-            text-decoration: none;
-            color: #007BFF;
+        header {
+            width: 100%;
+            background-color: #723c72;
+            color: white;
+            padding: 1rem;
+            text-align: center;
         }
-        a:hover {
-            text-decoration: underline;
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            text-align: center;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        nav {
+            margin-top: 2rem;
+        }
+        nav a {
+            margin: 0 1rem;
+            color: #723c72;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        code {
+            display: block;
+            background: #272822;
+            color: #f8f8f2;
+            padding: 1rem;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <h1>Site Under Construction</h1>
-    <p>Major improvements are being made. We hope to have this site up and running soon.</p>
-    <p><a href="https://sophical.org">Return to Sophical.org</a></p>
+    <div class="upper-navbar">
+        <span class="website-name">Sophical</span>
+        <a href="https://lingua.sophical.org/">Lingua</a>
+        <a href="https://ask.sophical.org/">Ask</a>
+        <a href="https://learn.sophical.org/">Learn</a>
+        <a href="https://tools.sophical.org/">Tools</a>
+    </div>
+    <div class="body-container">
+        <header>
+            <h1>Lingua</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Introducing the <em>Lingua programming language</em></h2>
+                <p>Lingua was developed to bridge the gap between powerful, expressive languages such as C/C++ and readable, feature-rich languages as Python.</p>
+                <p>Lingua is <strong>fast</strong>, <strong>feature-full</strong>, and <strong>open source</strong> making writing beautiful software efficient and painless.</p>
+            </section>
+            <section>
+                <h3>See it in action:</h3>
+                <code>
+                    print("Hello, Lingua!")
+                </code>
+            </section>
+            <nav>
+                <a href="/tutorial">Tutorial</a>
+                <a href="/docs">Documentation</a>
+                <a href="/examples">Example Programs</a>
+                <a href="/contributing">Contributing</a>
+            </nav>
+        </main>
+    </div>
 </body>
 </html>
